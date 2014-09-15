@@ -41,7 +41,9 @@
         else track = false;
  
         if (track) {
-          _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+          //_gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+          ga('send', 'event', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value);
+          console.log("Sent event");
           if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
             setTimeout(function() { location.href = elEv.loc; }, 400);
             return false;
