@@ -1,24 +1,185 @@
+<!doctype html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="paddys.css" type="text/css" media="screen" />
-    <title>Hope For Paddy's Pub Team Page</title>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hope for Paddy's Pub - Project Group Landing Page</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--
+educate, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
 
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
 <body>
 <div id="container">
-    <div id="header">
-        <h2>Hope For Paddy's Pub</h2>
-        <h3>Winter 2015</h3>
-    </div>
-    <div id="content">
-        <p>
-            Placeholder text for Hope For Paddy's Pub.
-        </p>
-    </div>
-    <div id="footer">
-        <p><a href="http://csupomona-cs580.github.io">CS580 Projects</a></p>
-    </div>
-</div>
 
+    <header>
+	
+    		
+        <nav>
+	<div class="width">
+    			<ul class="sf-menu dropdown">
+        	<li class="selected"><a href="index.html">Home</a></li>
+            <li><a class="has_submenu" href="#">Projects</a>
+            	<ul>
+                	<li><a href="#">Price Tracker</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+	
+		<div class="clear"></div>
+	
+    </nav>
+
+    <h1><a href="/">Hope for Paddy's Pub</a></h1>
+
+
+    <div id="slides-container" class="slides-container width">
+        <div id="slides">
+            <div>
+                
+		   <img src="images/fourleafclover.jpeg" alt="Clover Image" height="200" width="200"/>
+
+                    <h2>Hope for Paddy's Pub </h2>
+                    <p>We are the Hope for Paddy's Pub. Peddlers in strange and interesting code. Enjoy your stay.</p>
+                                  	
+			<p><a href="#" class="button button-slider">Press Me!</a>
+				<a href="#" class="button button-reversed button-slider">We do nothing!</a></p>
+                    
+
+            
+                
+            </div>
+            
+        
+	
+	 <div>
+            	<h2>Owners</h2>
+                <p><table border="0" cellpadding="0"> 
+						<tr> <td> <img src="images/jose.jpg" alt="Jose Figueroa" height="50" width="140"/> </td> <td> <img src="images/matt.jpg" alt="Matthew Lai" height="50" width="170"/> </td> <td> <img src="images/claude.jpg" alt="Claude Phan" height="50" width="100"/> </td> </tr>
+						<tr> <td> Jose Figueroa </td> <td> Matthew Lai </td> <td> Claude Phan </td> </tr>
+				   </table>
+				</p>
+                
+            </div>
+ 
+         
+		</div>
+        <div class="controls"><span class="jFlowNext"><span>Next</span></span><span class="jFlowPrev"><span>Prev</span></span></div>        
+        <div id="myController" class="hidden">
+		<!-- COPY AND PASTE SLIDE CONTROL FOR EACH NEW SLIDE -->
+		<span class="jFlowControl">Slide 1</span>
+		<span class="jFlowControl">Slide 2</span>
+	</div>
+    </div>
+
+
+    </header>
+
+
+
+
+    <div id="body" class="width">
+
+
+
+		<section id="content" class="two-column with-right-sidebar">
+
+	    <article>
+				
+			
+			<h2>Welcome to Hope for Paddy's Pub</h2>
+			<div class="article-info">Posted on <time datetime="2016-01-19">19 Jan</time> by <a href="#" rel="author">Matthew Lai</a></div>
+
+            <p>Nothing much to say. Carry on and we might post more in the future. ;)</p>	
+            
+
+		<!-- <a href="#" class="button">Read more</a>
+		<a href="#" class="button button-reversed">Comments</a> -->
+
+
+		
+		</article>
+		
+        </section>
+        <!--
+        <aside class="sidebar big-sidebar right-sidebar">
+	
+	
+            <ul>	
+               <li>
+                    <h4>Blocklist</h4>
+                    <ul class="blocklist">
+                        <li><a class="selected" href="index.html">Home Page</a></li>
+                        <li><a href="examples.html">Style Examples</a>
+				<ul>
+					<li><a href="page.html">Static slide page</a></li>
+					<li><a href="noslides.html">No slides page</a></li>
+				</ul>
+			</li>
+                        <li><a href="three-column.html">Three column layout example</a></li>
+                        <li><a href="#">Sed aliquam libero ut velit bibendum</a></li>
+                        <li><a href="#">Maecenas condimentum velit vitae</a></li>
+                    </ul>
+                </li>
+                
+               
+
+		
+               
+                <li>
+			<h4>News</h4>
+			<ul class="newslist">
+				<li>
+					<p><span class="newslist-date">Jul 21</span>
+			                   Quisque hendrerit lorem sit amet dui viverra dictum. Phasellus imperdiet magna sit amet arcu tristique ultricies ut in dui.</p>
+				</li>
+
+<li>
+					<p><span class="newslist-date">May 09</span>
+			                   Mauris et felis semper, congue dui ac, iaculis ipsum. Fusce non rhoncus risus, quis luctus nisl. Donec vitae velit tincidunt, tincidunt felis eu, suscipit nibh. </p>
+ 
+				</li>
+			</ul>
+                </li>
+	
+   		<li>
+                    <h4>Maecenas varius</h4>
+                    <ul>
+				<li><a href="#">Nam cursus nisi nec viverra iaculis</a></li>
+				<li><a href="#">Integer lacinia risus id nibh vestibulum</a></li>
+				<li><a href="#">Mauris eget ante ut elit rutrum ornare </a></li>
+				<li><a href="#">Vivamus quis orci et suscipit consequa</a></li>
+				<li><a href="#">Nam eget tellus adipiscin hendrerit</a></li>
+			</ul>
+                </li>
+                
+            </ul>
+		
+        </aside> -->
+    	<div class="clear"></div>
+    </div>
+    <footer>
+
+         <p>&copy; YourSite 2014. <a href="http://zypopwebtemplates.com/">Free HTML5 Templates</a> by ZyPOP</p>
+      
+    </footer>
+</div>
 </body>
+</html>
