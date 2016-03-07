@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+body{
+	background-color: #ebb325;
+	}
+#container{
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(file:///C|/Users/Asim/Desktop/Photo%20Gallery%20tutorial/images/striped_lens.png);
+	border-radius:10px;
+}
+header{
+	width: 1000px;
+	font-size:20px;
+	text-align:center;
+	background-color:#21C6F8;
+	border-top-left-radius:10px;
+	border-top-right-radius: 10px;
+}
+footer{
+	width: 1000px;
+	text-align:center;
+	font-size:20px;
+	background-color: #21C6F8;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	clear:both;
+}
+#content{
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#content ul{
+	list-style-type:none;
+	}
+#content li{
+	float: right;
+	width:200px;
+	display:block;
+	margin-right:40px;
+	margin-bottom: 10px;
+}
+#content img{
+	-webkit-webkit-transition: all 1s ease;
+	-moz-webkit-transition: all 1s ease;
+	-ms-webkit-transition: all 1s ease;
+	-o-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-ms-filter: blur(3px);
+	-o-filter: blur(3px);
+	border: 1px solid #000000; 
+}
+#content img:hover{
+	-webkit-webkit-transition: all 1s ease;
+	-moz-webkit-transition: all 1s ease;
+	-ms-webkit-transition: all 1s ease;
+	-o-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-ms-filter: blur(0px);
+	-o-filter: blur(0px);
+	transform: translateZ(25px) rotate(3deg);
+	border: 1px solid #000000;
+	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+	
+}
+	
