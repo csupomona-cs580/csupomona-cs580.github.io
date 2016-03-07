@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#slidecontainer{
+	width:604px;
+	height:453px;
+	position:relative;
+}
+
+#slidecontainer .prevButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:left top;
+	left:0
+}
+
+#slidecontainer .prevButton:hover{ background-position:left bottom;left:0;}
+
+#slidecontainer .nextButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:right top;
+	right:0
+}
+
+#slidecontainer .nextButton:hover{background-position:right bottom;right:0;}
+
+#slidecontainer ul{
+	width:604px;
+	height:453px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#slidecontainer li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#slidecontainer li{
+	position:absolute;
+	display:none;
+}
+
+
