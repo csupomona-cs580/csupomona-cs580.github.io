@@ -115,6 +115,13 @@
 	{
 		vertical-align: middle;
 	}
+
+	.fadein { position:relative; width:500px; height:332px; }
+.fadein img { position:absolute; left:100px; top:0; }
+.slideshow {
+	height: 200%;
+	width: 200%;
+}
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
