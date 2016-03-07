@@ -8,7 +8,11 @@ body {
 	background: #fff;
 }
 
-#members
+.ss img{
+	margin-top: 10px;
+}
+
+.members
 {
 	padding-left: 5px;
 }
@@ -35,6 +39,10 @@ body {
 {
 	clear: left;
 	padding: 10px;
+}
+
+.bolded{
+	font-weight: bold;
 }
 
 #content h2
@@ -75,4 +83,9 @@ table, td
 .auto-style4 {
 	font-weight: bold;
 	background-color: #9DEDF3;
+}
+
+.project_urls{
+	font-size: 30px;
+	font-weight: bold;
 }
