@@ -1,0 +1,18 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   teams-winter2017/Brogramerrs/images/bro.jpg
+#	new file:   teams-winter2017/Brogramerrs/images/d.jpg
+#	new file:   teams-winter2017/Brogramerrs/images/logo.png
+#	new file:   teams-winter2017/Brogramerrs/images/tarun.jpg
+#	new file:   teams-winter2017/Brogramerrs/images/vatsal.jpg
+#	new file:   teams-winter2017/Brogramerrs/index.html
+#	new file:   teams-winter2017/Brogramerrs/js/jquery.smooth-scroll.min.js
+#	new file:   teams-winter2017/Brogramerrs/main.css
+#	modified:   teams-winter2017/index.html
+#
+
