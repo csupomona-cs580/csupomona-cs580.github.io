@@ -1170,8 +1170,13 @@
 				letter-spacing: -0.015em;
 			}
 
-			h3, h4, h5, h6 {
+			h3, h4, h5 {
 				font-size: 1.25em;
+				letter-spacing: -0.015em;
+			}
+			
+			h6 {
+				font-size: 0.75em;
 				letter-spacing: -0.015em;
 			}
 
