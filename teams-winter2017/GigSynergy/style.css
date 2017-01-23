@@ -1,0 +1,79 @@
+body {
+	background: white;
+	font-family:  Times New Roman;
+}
+
+#main
+{
+	
+	text-align : center;
+}
+
+#header
+{
+	background:#808B96  ;
+	padding: 30px;
+
+}
+
+#header img
+ {
+  float: center;
+  width: 100px;
+  height: 100px;
+ 
+}
+
+
+
+#header h1
+{
+
+    color: white;
+	font-size : 50;
+	margin: 0;
+
+}
+#header h2
+{
+	color: white;
+	font-size : 50;
+	margin: 0;
+}
+
+#header h3
+{
+	color: white;
+	font-size : 40;
+	margin: 15px auto;
+}
+
+#header h4
+{
+	color: white;
+	font-size : 20;
+	text-align:Center;
+	margin: 15px auto;
+}
+
+#content
+{
+	padding: 30px;
+}
+
+#footer
+{
+	background: #808B96;
+	font-size :15;
+	color: white;
+	text-align:Center;
+	padding: 10px;
+}
+
+#footer a
+{
+	color: red;
+}
+
+
+
