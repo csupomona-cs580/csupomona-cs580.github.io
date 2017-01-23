@@ -1,5 +1,6 @@
 body {
-	background-color: #00CCFF
+	background-color: #00CCFF;
+	min-width: 1280px;
 }
 
 a  {
@@ -23,7 +24,6 @@ img {
 
 #header {
 	position: relative;
-	top: -10px;
 	background-color: #33FF00;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
