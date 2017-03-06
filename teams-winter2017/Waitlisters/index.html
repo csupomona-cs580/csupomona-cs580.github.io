@@ -1,27 +1,142 @@
 <html>
-<head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="index.css" type="text/css" media="screen" />
-    <title>The Waitlisters</title>
-</head>
+	<head>
+	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width">
+	    <title>The Waitlisters</title>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<body>
-<div id="container">
-    <div id="header">
-        <h2>Waitlisters</h2>
-        <h3>Winter 2017</h3>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    
+	    <link rel="stylesheet" href="index.css" type="text/css">
+	    
+	</head>
+
+	<body>
+	
+	
+    <div class="container">
+		<nav class="navbar navbar-default navbar-static-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">NoMap</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#">Home</a></li>
+	            <li><a href="#what">What is NoMap?</a></li>
+	            <li><a href="#slides">Slides</a></li>
+	            <li><a href="#screenshots">Screenshots</a></li>
+	            <li><a href="#team">Our Team</a></li>
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="http://cs580.yusun.io/teams-winter2017/index.html">CS 580</a></li>
+	            <li><a href="#"></a></li> <!-- Placeholder -->
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	    
+      <div class="masthead">
+	  		<img class="title-image" src="img/w.png" height="30px">
+	   		<span class="title-text">Waitlisters</span]>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+      </div>
+      
+      <div class="row" id="what">
+	      <h3>What is NoMap?</h3>
+	      <p>NoMap is an online web service that will automatically send you text or email notifications with driving directions whenever you are ready to get on the road to your next destination.</p>
+	      <p>We eliminate any last minute fumbling to check for traffic alerts. You drive, we do the work for you.</p>
+	      <p><a class="btn btn-primary" href="http://www.nomap.me" role="button">Try NoMap Today!</a></p>
+	      <p class="url-backup">If the button does not link you, please use this url: <a href="http://www.nomap.me">http://www.nomap.me</a></p>
+	 
+	 	  <p>Interested in checking out our source code? Our GitHub repository is located at <a href="https://github.com/Waitlisters/">https://github.com/Waitlisters/</a>
+	 
+	 
+	  </div>
+	  
+	  <div class="row" id="slides">
+	  		<h3>Presentation Slides</h3>
+	  		<p>Here is the link to the <a href="https://docs.google.com/presentation/d/1lhbEYOR3l8Pe-1763ViFg-oYlo0acustzc9jreHuT5o/edit?usp=sharing">google slides</a></p>
+	  </div>
+	  
+	  <div class="row" id="screenshots">
+	  		<h3>Screenshots</h3>
+	  		<a href="#" class="pop">
+    			<img src="img/login_page.png" style="width: 400px; height: 264px;">
+			</a>
+			<a href="#" class="pop">
+    			<img src="img/no_route.png" style="width: 400px; height: 264px;">
+			</a>
+			<a href="#" class="pop">
+    			<img src="img/add_route.png" style="width: 400px; height: 264px;">
+			</a>
+			<a href="#" class="pop">
+    			<img src="img/route_added.png" style="width: 400px; height: 264px;">
+			</a>
+			
+			<script>
+		        $(function() {
+		    		$('.pop').on('click', function() {
+		    			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+		    			$('#imagemodal').modal('show');   
+		    		});		
+		   		 });
+	        </script>
+			<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">              
+			      <div class="modal-body">
+			      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <img src="" class="imagepreview">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  		
+	  </div>
+
+      <!-- Example row of columns -->
+      <div class="row" id="team">
+      	<h3> Our Team </h3>
+        <div class="col-lg-4">
+          <h2>Daniel Acevedo</h2>
+          <img src="img/daniel.png" class="img-circle" alt="Daniel">
+          <h3>Developer</h3>
+          <p><a class="btn btn-primary" href="https://github.com/danielacevedo65" role="button">Daniel's GitHub</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Eli Selkin</h2>
+          <img src="img/eli.png" class="img-circle" alt="Eli">
+          <h3>Developer</h3>
+          <p><a class="btn btn-primary" href="https://github.com/eselkin" role="button">Eli's GitHub</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Evan Miller</h2>
+          <img src="img/evan.png" class="img-circle" alt="Evan">
+          <h3>Developer</h3>
+          <p><a class="btn btn-primary" href="https://github.com/PilotEvan" role="button">Evan's GitHub</a></p>
+        </div>
+      </div>
+
+
+	  <br><br>
+      <footer class="footer">
+        <p>&copy; Waitlisters 2017</p>
+      </footer>
+
     </div>
-    <div id="content">
-
-        <img src="https://3.bp.blogspot.com/-McSkb3Du57I/Vp1Ntg0gffI/AAAAAAAABHU/0ymegoLRKFU/s1600/redbudwaitlistopen.png"></img>
-
-        <p>
-            Formed by a common bond of being on the waitlist, we are THE WAITLISTERS!
-        </p>
-    </div>
-    <div id="footer">
-        <p><a href="http://csupomona-cs580.github.io">CS580 Projects</a></p>
-    </div>
-</div>
-
-</body>
+	
+	</body>
+	
+</html>
