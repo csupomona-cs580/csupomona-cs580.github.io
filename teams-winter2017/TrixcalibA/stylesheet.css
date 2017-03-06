@@ -65,14 +65,14 @@ p {
 	width: 50%;
 }
 
-logo table {
-	position: relative;
+logo {
+	margin-left: auto; 
+    margin-right: auto;
 	border: #000000 1px solid;
 	background-color: white;
-	left: 200px;
 }
 
-screen shot {
+screen_shot {
 	position: relative;
 	border: #000000 1px solid;
 	background-color: white;
@@ -80,7 +80,7 @@ screen shot {
 
 td img {
 	height: 400px;
-	width: 800px;
+	width: 400px;
 	box-shadow: none;
 }
 
