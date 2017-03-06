@@ -65,21 +65,22 @@ p {
 	width: 50%;
 }
 
-table {
+logo table {
+	position: relative;
 	border: #000000 1px solid;
 	background-color: white;
-	float: right;
-	margin-right: 10px;
+	left: 200px;
 }
 
-td {
-	height: 200px;
-	width: 200px;
+screen shot {
+	position: relative;
+	border: #000000 1px solid;
+	background-color: white;
 }
 
 td img {
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 800px;
 	box-shadow: none;
 }
 
