@@ -1,6 +1,9 @@
 body {
-	
+	background: url("img/background-1.png") no-repeat;
 	font-family: Arial, Helvetica;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 
 .jumbotron {
@@ -22,6 +25,15 @@ body {
  	margin-bottom: 0.75em;
 }
 
+.nomap_link {
+	text-align: center;
+}
+
+.container {
+	background: white;
+	padding: 25px;
+}
+
 .modal-dialog {
     position: relative;
     overflow-y: auto;    
@@ -35,6 +47,7 @@ body {
 }
 
 .url-backup {
+	text-align: center;
 	font-size: 10px;
 }
 

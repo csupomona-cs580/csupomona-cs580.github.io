@@ -1229,6 +1229,9 @@
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			background-image: url("../images/logoWhite.png");
+						background-position: center center;
+			background-repeat: no-repeat;
 		}
 
 			#header .logo .icon:before {
