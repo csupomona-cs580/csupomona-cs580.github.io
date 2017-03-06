@@ -74,6 +74,8 @@ p {
 
 #screen_shot {
 	position: relative;
+	width: 100%;
+	display: table;
 }
 
 td img {
