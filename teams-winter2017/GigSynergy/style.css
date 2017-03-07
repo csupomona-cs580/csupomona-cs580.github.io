@@ -24,7 +24,9 @@ body {
  
 }
 
-
+a:link {
+    color: red;
+}
 
 #header h1
 {
@@ -56,6 +58,11 @@ body {
 	margin: 15px auto;
 }
 
+#header h5
+{
+	color: white;
+	font-size : 20;
+}
 #content
 {
 	padding: 30px;
