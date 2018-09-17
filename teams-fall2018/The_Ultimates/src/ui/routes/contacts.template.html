@@ -1,0 +1,17 @@
+<div id="contacts" class="fade-in grid-container-2-by-2" ng-controller="ContactsController" ng-init="htmlLoaded()" ng-show="ready()">
+	<div class="close-button" ng-click="closePanel()"></div>
+	<div ng-repeat="contact in contacts" class="grid-item">
+		<div class="panel">
+			<div class="profile">
+				<img src={{contact.img}} alt={{contact.name}}">
+				<div class="title">{{contact.name}}</div>
+			</div>
+			<div class="info">
+				<ul>
+					<li><strong>email:</strong> {{contact.info.email}}</li>
+					<li><strong>github:</strong> <a href={{contact.info.github}}>{{contact.info.github}}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
