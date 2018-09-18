@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>WSJ</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="App.css">
 
-<div class="container">
-  <div class="jumbotron">
-  	<h1> We are WSJ</h1>
-  	<p> Wilsen Kosasih, Xianmei Lei, Jake Lepere <p>
-  </div>
-  <div class="row">
-  	<div class="col-sm-4"> 
-		<p class="well"> Live Demo: </p>
-	</div>
-	<div class="col-sm-4">
-		<p class= "well"> Github Link: 
-			<a href="https://github.com/WSJ-2018SE-CPP/gasme"> GasMe Source Code </a>
-		</p>
-	</div>
-  	<div class="col-sm-4">
-  		<p class ="well"> Presentation: 
-  			<a href="https://docs.google.com/presentation/d/1FS0RDeTne5OEF3AKNj-sUzq7sd9wnfsR75Q778a4sZA/edit?usp=sharing"> 
-  			Initial Presentation </a>	
-  		</p>
-  	</div>
-  </div>
-  <div class="well">  
-  <h2> Project Description </h2>
-  <h3> Problem <h3>
-  <h4> Youtube Interview: <h4>
-  
-  <h3> Solution <h3>
-  <h3> Planned Features <h3>
-  </div>
-  <h2> Members </h2>
-  <div class="row">
-  	<div class="col-sm-4"> 
-		<img src="img/wnk.png" class="img-rounded">
-	</div>
-	<div class="col-sm-4"> 
-		<img src="img/xl.png" class="img-rounded">
-	</div>
-  	<div class="col-sm-4">
-  		<img src="img/jl.png" class="img-rounded">
-  	</div>
-</div>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>WSJ's Show Time</title>
+  </head>
+  <body>
+    <div>
+        <div class="App">
+          <header class="App-header">
+            <img src="logo/gasMe.png" class="App-logo" alt="logo" />
+            <h4 class="App-title">WSJ</h4>
+          </header>
+          <p class="App-intro">Optimal Travel Route To Save Your Gas</p>
+        </div>
+        <div class="bg-img">
+          <div
+            style={
+              display: "flex",
+              justifyContent: "center",
+
+              height: "100vh"
+              vertical-align: "middle";
+            }
+            class="btn-group btn-group-toggle"
+            data-toggle="buttons"
+          >
+            <btn class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autoComplete="off"
+              />
+              LIVE DEMO
+            </btn>
+            <btn class="btn btn-secondary" onclick="location.href='https://github.com/WSJ-2018SE-CPP/gasme'">
+              <input
+                type="radio"
+                name="options"
+                id="option2"
+                autoComplete="off"
+              />
+              GITHUB
+            </btn>
+
+            <btn class="btn btn-secondary" onclick="location.href='https://docs.google.com/presentation/d/1FS0RDeTne5OEF3AKNj-sUzq7sd9wnfsR75Q778a4sZA/edit?usp=sharing'">
+              <input
+                type="radio"
+                name="options"
+                id="option2"
+                autoComplete="off"
+              />
+              PRESENTATION
+            </btn>
+          </div>
+        </div>
+
+        <div class="App">
+          <img class="thumbnail-img" src="img/wilsen.png" />
+          <img class="thumbnail-img" src="img/xianmei.png" />
+          <img class="thumbnail-img" src="img/jake.png" />
+          <p class="name">Wilsen    Xianmei    Jake</p>
+        </div>
+      </div>
+  </body>
 </html>

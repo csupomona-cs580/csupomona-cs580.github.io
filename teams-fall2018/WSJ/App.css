@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #e8f6f3;
+  height: 195px;
+  padding: 50px;
+  color: white;
+  margin-bottom: 1em;
+  top: 0;
+}
+
+.App-title {
+  margin-top: 1em;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #0b5345;
+  font-family: monospace;
+}
+
+.App-intro {
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #717d7e;
+}
+
+.bg-img {
+  text-align: center;
+  background: url(./img/bg2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 700px;
+}
+
+
+.thumbnail-img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  margin: 1em
+}
+
+p.name {
+  word-spacing: 130px;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
