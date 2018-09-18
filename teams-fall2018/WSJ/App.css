@@ -34,7 +34,7 @@
   background: url(./img/bg2.png);
   background-size: contain;
   background-position: center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   height: 700px;
 }
 
