@@ -62,13 +62,11 @@
 
 .icon {
   height: 40px;
-  /* width: 30%; */
 }
 
-.title {
+.class {
   font-weight: bold;
   color: steelblue;
-  /* font-size: 12px; */
 }
 
 .bg-color {
@@ -116,5 +114,5 @@ h5 {
 .icon-title {
   font-weight: bold;
   color: steelblue;
-  font-size: 12px;
+  font-size: 13px;
 }
