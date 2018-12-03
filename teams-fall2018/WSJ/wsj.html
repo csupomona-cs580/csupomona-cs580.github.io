@@ -35,63 +35,91 @@
     <title>WSJ's Show Time</title>
   </head>
   <body>
-    <div>
         <div class="App">
-          <header class="App-header">
+          <header class="App-header" id="myHeader">
             <img src="logo/gasMe.png" class="App-logo" alt="logo" />
             <h4 class="App-title">WSJ</h4>
           </header>
-          <p class="App-intro">Optimal Travel Route To Save Your Gas</p>
-        </div>
-        <div class="bg-img">
-          <div
-            style={
-              display: "flex",
-              justifyContent: "center",
-
-              height: "100vh"
-              vertical-align: "middle";
-            }
-            class="btn-group btn-group-toggle"
-            data-toggle="buttons"
-          >
-            <btn class="btn btn-secondary">
-              <input
-                type="radio"
-                name="options"
-                id="option1"
-                autoComplete="off"
-              />
-              LIVE DEMO
-            </btn>
-            <btn class="btn btn-secondary">
-              <input
-                type="radio"
-                name="options"
-                id="option2"
-                autoComplete="off"
-              />
-              GITHUB
-            </btn>
-
-            <btn class="btn btn-secondary" onclick="location.href='https://docs.google.com/presentation/d/1FS0RDeTne5OEF3AKNj-sUzq7sd9wnfsR75Q778a4sZA/edit?usp=sharing'">
-              <input
-                type="radio"
-                name="options"
-                id="option2"
-                autoComplete="off"
-              />
-              PRESENTATION
-            </btn>
+          <!-- <p class="App-intro">Optimal Travel Route To Save Your Gas</p> -->
+          <div class="jumbotron">
+            <span class="jumbotron-text">
+              <h2 class="title">
+                PLAN SMART, SAVE GAS COST.
+              </h2>
+              <h5>Wonder all the time where and when to fuel your car during daily commute or long trips? 
+              Our trip planner can help you find the cheapest route with over 150,000 gas stations in the U.S.
+              </h5>
+              <h4>Plan your trip <a href="http://www.gasmeonline.com/"> <span class="link">now</span></a>!</h4>
+            </span>
           </div>
         </div>
+        <div class="bg-img">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-8 third">
+                    <p class='introduction'><span class="icon-title">GASME</span> is an application which calculates the cheapest gas cost trip of the user's desired origin and stops
+                      considering the vehicle's gas comsumption and initial gas level and user's gas brand preference. The calculation 
+                      uses A* with optimization of the computation. The front end is a simple implementation with React. 
+                      We are a group of developers who are inspired to solve the problems many commuters face. 
+                        Read more about us <A HREF="#team">below</A>.</p>
+                  </div>
 
-        <div class="App">
-          <img class="thumbnail-img" src="img/wilsen.png" />
-          <img class="thumbnail-img" src="img/xianmei.png" />
-          <img class="thumbnail-img" src="img/jake.png" />
-          <p class="name">Wilsen    Xianmei    Jake</p>
+                  <div class="col-md-4 third">
+                    <div class="row"></div>
+                    <div class="col-md-4">
+                      <a href="http://www.gasmeonline.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/YouTube_social_white_square_%282017%29.svg" class="icon" alt="trip"/>
+                        <div class="icon-title">
+                          LIVE DEMO
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="https://github.com/WSJ-2018SE-CPP/gasme">
+                        <img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="icon" alt="trip"/>
+                        <div class="icon-title">
+                          GITHUB
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="https://docs.google.com/presentation/d/1EkO9C8qa8jnp-oLDon7bA4-oxC76P7n9-rcUnxtPBOw/edit?usp=sharing">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" class="icon" alt="trip"/>
+                        <div class="icon-title">
+                          PRESENTATION
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+          </div>
+          
         </div>
-      </div>
+          <div class="App" id="team">
+            <img class="thumbnail-img" src="img/wilsen.png" />
+            <img class="thumbnail-img" src="img/xianmei.png" />
+            <img class="thumbnail-img" src="img/jake.png" />
+            <p class="name">Wilsen    Xianmei    Jake</p>
+          </div>
+
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
   </body>
 </html>
