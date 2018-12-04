@@ -1,0 +1,193 @@
+body {
+	background-size: cover;
+	background-repeat: no-repeat, repeat;
+	background-color: rgba(18, 183, 189, 0.75);
+	background-image: url('../images/gabriele-garanzelli-529492-unsplash.jpg');
+	background-blend-mode: luminosity;
+}
+
+a {
+   text-decoration: none;
+}
+
+a.underlined {
+   text-decoration: underline;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.fade-out {
+	opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 2s;
+}
+
+@font-face {
+    font-family: Minstrel;
+    src: url('../fonts/MINSPSW_.ttf');
+}
+
+@font-face {
+	font-family: Argon;
+	src: url('../fonts/ArgonPERSONAL-Regular.otf') format('opentype');
+}
+
+#logo {
+	background-size: 100%;
+	background-image: url('../images/logo.png');
+}
+
+.close-button {
+	background-size: 100%;
+	background-image: url('../images/button-close.png');
+}
+
+.grid-item {
+	color: rgb(255, 255, 255);
+}
+
+.title {
+	color: rgb(255, 255, 255);
+	font-size: 2.5vw;
+	font-family: Argon;
+}
+
+#home .title {
+	color: rgba(255, 255, 255, 0.80);
+	font-size: 8vw;
+	font-family: Minstrel;
+}
+
+.panel {
+	color: rgb(255, 255, 255);
+	font-size: 4vw;
+	font-family: Argon;
+}
+
+
+#about {
+	background: rgba(0, 30, 30, .75);
+	padding: 0px;
+}
+#about .title {
+	font-family: Argon;
+	font-size: 2.5vw;
+}
+#about .grid-item {
+	cursor: pointer;
+}
+
+#contacts {
+	background: rgba(0, 30, 30, .75);
+	padding: 0px;
+}
+#contacts .panel {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.5vw;
+}
+#contacts .panel .profile .title {
+	color: rgb(255, 255, 255);
+	font-size: 2vw;
+	font-family: Argon;
+}
+#contacts ul {
+	list-style-type: circle;
+}
+
+.outerCircle {
+	visibility: hidden;
+	background-color: transparent;
+	border: 8px solid rgba(255, 255, 255, 0.75);
+	opacity: .9;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-radius: 23vw;
+	animation: spinPulse 5s infinite ease-in-out;
+	-moz-animation: spinPulse 5s infinite ease-in-out;
+	-webkit-animation: spinPulse 5s infinite ease-in-out;
+}
+
+.innerCircle {
+	visibility: hidden;
+	background-color: transparent;
+	border: 4px solid rgba(255, 241, 39, 0.75);
+	opacity: .9;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-radius: 21vw;
+	animation: spinoffPulse 3s infinite linear;
+	-moz-animation: spinoffPulse 3s infinite linear;
+	-webkit-animation: spinoffPulse 3s infinite linear;
+}
+
+.panel:hover .outerCircle {
+	visibility: visible;
+}
+
+.panel:hover .innerCircle {
+	visibility: visible;
+}
+
+@keyframes fadeInOpacity {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeOutOpacity {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes spinPulse {
+	0% { transform:rotate(160deg); opacity:0;}
+	50% { transform:rotate(145deg); opacity:1; }
+	100% { transform:rotate(-320deg); opacity:0; }
+}
+@keyframes spinoffPulse {
+	0% { transform:rotate(0deg); opacity:0;}
+	50% { transform:rotate(180deg); opacity:1; }
+	100% { transform:rotate(360deg); opacity:0; }
+}
+
+@-moz-keyframes fadeInOpacity {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes fadeOutOpacity {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes spinPulse {
+	0% { -moz-transform:rotate(160deg); opacity:0;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+	0% { -moz-transform:rotate(0deg); opacity:0;}
+	50% { -moz-transform:rotate(180deg); opacity:1; }
+	100% { -moz-transform:rotate(360deg); opacity:0; }
+}
+
+@-webkit-keyframes fadeInOpacity {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes fadeOutOpacity {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes spinPulse {
+	0% { -webkit-transform:rotate(160deg); opacity:0;}
+	50% { -webkit-transform:rotate(145deg); opacity:1;}
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }
+}
+@-webkit-keyframes spinoffPulse {
+	0% { -webkit-transform:rotate(0deg); opacity:0;}
+	50% { -webkit-transform:rotate(180deg); opacity:1; }
+	100% { -webkit-transform:rotate(360deg); opacity:0; }
+}

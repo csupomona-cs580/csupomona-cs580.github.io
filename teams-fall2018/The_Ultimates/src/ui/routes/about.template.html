@@ -1,26 +1,34 @@
-<div id="about" class="fade-in grid-container-2-by-2" ng-controller="AboutController" ng-init="htmlLoaded()" ng-show="ready()">
+<div id="about" class="fade-in" ng-controller="AboutController" ng-init="htmlLoaded()" ng-show="ready()">
 	<div class="close-button" ng-click="closePanel()"></div>
-	<div class="grid-item">
-		<div class="title">
-			What is our product?
-		</div>
-		<p>
-			An employee management system that is scalable to fit small to large-scale business.
-		</p>
-	</div>
-	<div class="grid-item">
-		<div class="title">
-			Screenshots
+	<div class="section">
+		<div class="title centerY" style="margin-left:10%; margin-right:10%;">
+			Looking for employee management system that is scalable to fit your business?
 		</div>
 	</div>
-	<div class="grid-item">
-		<div class="title">
-			Videos
-		</div>
+	<div class="section">
+		<div class="box-container">
+				<ui-carousel slides="slides" slides-to-show="1"
+				 slides-to-scroll="1" initial-slide="0">
+					<carousel-item>
+						<h2>{{ item.title }}</h2>
+						<img src="{{ item.image }}" alt="Image" />
+					</carousel-item>
+
+					<carousel-prev>
+						<button class="interactable toggle-left"></button>
+					</carousel-prev>
+
+					<carousel-next>
+						<button class="interactable toggle-right"></button>
+					</carousel-next>
+				</ui-carousel>
+			</div>
+	</div>
+	<div class="section" style="height:25%;">
 	</div>
 	<a href="https://github.com/Ultimates1/employee-management-system">
-		<div class="grid-item">
-			<img src="images/logo-github.png">
+		<div class="section" style="height:75%;">
+			<img src="assets/images/logo-github.png">
 			<div class="title">
 				Github
 			</div>

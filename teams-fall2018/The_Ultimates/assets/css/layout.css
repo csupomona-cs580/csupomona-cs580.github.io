@@ -1,0 +1,331 @@
+body {
+	overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.centerX {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.centerY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+.interactable {
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: all;
+    outline: 0;
+    transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.close-button {
+	position: fixed;
+	top: 1em;
+	right: 2em;
+	width: 3vh;
+	height: 3vh;
+	z-index: 100;
+}
+.close-button:hover {
+	cursor: pointer;
+}
+
+#logo {
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	bottom: calc(50% + 10vh);
+	left: calc(50% - 10vw);
+	opacity: 0.75;
+}
+
+.title {
+	position: absolute;
+	text-align: center;
+}
+
+#home .title {
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   height: auto;
+   top: calc(50% - 15vh);
+   overflow: hidden;
+}
+
+.panel {
+	position: absolute;
+}
+
+.panel.product {
+	top: 65%;
+	left: 15%;
+	width: 20vh;
+	height: 20vh;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: center; /* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel.about {
+	top: 80%;
+	left: 50%;
+	width: 20vh;
+	height: 20vh;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: center; /* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel.contacts {
+	top: 65%;
+	left: 85%;
+	width: 20vh;
+	height: 20vh;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: center; /* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.outerCircle {
+	position: absolute;
+	padding: 0px;
+	margin: 0;
+	width: 23vw;
+	height: 23vw;
+}
+
+.innerCircle {
+	position: absolute;
+	padding: 0px;
+	margin: 0;
+	width: 21vw;
+	height: 21vw;
+}
+
+.grid-container-2-by-2 {
+	display: grid;
+	grid-template-columns: calc(50% - 2vw) calc(50% - 2vw);
+	grid-template-rows: 1fr 1fr;
+	margin: 0px;
+	padding: 0px;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: stretch;
+}
+.grid-item {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#about {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	padding-top: 10%;
+	overflow-y: auto;
+}
+#about .section {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#about .title {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#contacts {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+#contacts .panel {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin: 1vw;
+	padding: 0px;
+	width: calc(100% - 2vw);
+	height: calc(50% - 2vw);
+}
+#contacts .panel .profile {
+	position: absolute;
+	display: inline-block;
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	height: 80%;
+}
+#contacts .panel .profile img {
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+	width: auto;
+	height: 80%;
+}
+#contacts .panel .profile .title {
+	position: relative;
+	margin-top: 1vh;
+	padding: 2px;
+	height: auto;
+}
+#contacts .panel .info {
+	position: absolute;
+	display: inline-block;
+	padding: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: auto;
+}
+
+
+h2 {
+	color: #fff;
+	font-size: 36px;
+	line-height: 100px;
+	margin: 10px;
+	text-align: center;
+}
+
+.box-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.carousel-prev {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	transform: translateY(-50%);
+
+}
+.carousel-next {
+	position: absolute;
+	top: 35%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+button {
+	padding: 8px 20px;
+	outline: none;
+	border: none;
+	height: 10vh;
+}
+
+.toggle-left {
+	background: transparent url(../images/toggle_left.png) left center/50% 100% no-repeat;
+}
+
+.toggle-right {
+	background: transparent url(../images/toggle_right.png) left center/50% 100% no-repeat;
+}
+
+.v-middle, .ui-carousel .carousel-btn {
+	display: block;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.ui-carousel {
+	display: block;
+	margin-bottom: 30px;
+}
+.ui-carousel .carousel-wrapper {
+	position: relative;
+}
+.ui-carousel .track-wrapper {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.ui-carousel .track {
+	position: relative;
+	display: block;
+	float: left;
+}
+.ui-carousel .slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+.ui-carousel .carousel-btn {
+	position: absolute;
+	z-index: 10;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	opacity: .75;
+}
+.ui-carousel .carousel-btn:hover {
+	opacity: 1;
+}
+.ui-carousel .carousel-prev .carousel-btn {
+	left: -25px;
+}
+.ui-carousel .carousel-next .carousel-btn {
+	right: -25px;
+}
+.ui-carousel .carousel-disable {
+	opacity: 0.5;
+}
+.ui-carousel .carousel-disable .carousel-btn:hover {
+	opacity: .75;
+}

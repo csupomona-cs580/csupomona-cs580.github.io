@@ -1,15 +1,16 @@
 <html ng-app="ultimates-ui">
 
 <head>
-	<link href="ultimates.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body ng-controller="ApplicationController" ng-init="htmlLoaded()" ng-show="ready()">
 	<div ng-view>
 	</div>
 
-	<script type="text/javascript" src="./vendors.ultimates.js"></script>
-	<script type="text/javascript" src="./ultimates.js"></script>
+	<script type="text/javascript" src="./vendors.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
