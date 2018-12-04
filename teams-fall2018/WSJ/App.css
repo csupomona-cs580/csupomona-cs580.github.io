@@ -34,16 +34,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 40vh;
   width: 100%;
 }
 
 .thumbnail-img {
-  border: 2px solid rgb(219, 236, 255);
-  border-radius: 4px;
   padding: 5px;
   width: 150px;
   margin: 1em;
+}
+
+.square-border {
+  border: 2px solid rgb(219, 236, 255);
+  border-radius: 4px;
 }
 
 @keyframes App-logo-spin {
@@ -62,6 +65,7 @@
 
 .icon {
   height: 40px;
+  text-align: center;
 }
 
 .class {
@@ -105,7 +109,7 @@ h5 {
 
 .introduction {
   color: gray;
-  text-align: left;
+  text-align: justify;
   padding-left: 30vh;
   padding-right: 20vh;
   font-size: 16px;
@@ -115,4 +119,15 @@ h5 {
   font-weight: bold;
   color: steelblue;
   font-size: 13px;
+}
+
+.title {
+  font-weight: bold;
+  color: steelblue;
+  text-shadow: 2px 2px #fff;
+}
+
+.second {
+  text-align: left;
+  padding-top: 1rem;
 }
