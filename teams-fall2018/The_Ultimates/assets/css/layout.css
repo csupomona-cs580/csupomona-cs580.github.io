@@ -170,6 +170,16 @@ body {
 	height: 100%;
 	text-align: center;
 }
+#about .section .text {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: white;
+	top: 50%;
+}
 #about .title {
 	position: relative;
 	display: block;
@@ -244,14 +254,14 @@ h2 {
 
 .carousel-prev {
 	position: absolute;
-	top: 35%;
+	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
 
 }
 .carousel-next {
 	position: absolute;
-	top: 35%;
+	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
 }
@@ -328,4 +338,12 @@ button {
 }
 .ui-carousel .carousel-disable .carousel-btn:hover {
 	opacity: .75;
+}
+
+.ui-carousel .carousel-item {
+	height: 100%;
+}
+
+.ui-carousel .carousel-item img {
+	height: 75%;
 }

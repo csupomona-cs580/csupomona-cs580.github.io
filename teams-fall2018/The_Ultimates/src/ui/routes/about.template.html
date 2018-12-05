@@ -1,33 +1,40 @@
 <div id="about" class="fade-in" ng-controller="AboutController" ng-init="htmlLoaded()" ng-show="ready()">
 	<div class="close-button" ng-click="closePanel()"></div>
 	<div class="section">
-		<div class="title centerY" style="margin-left:10%; margin-right:10%;">
+		<div class="title centerY" style="margin-left:10%; margin-right:10%;top:30%;">
 			Looking for employee management system that is scalable to fit your business?
+		</div>
+		<div class="text">
+			We offer a customizable package that meets your needs.<br>
+			No more expensive packages with rarely-used features,<br>
+			or multiple products to complete your tasks.
 		</div>
 	</div>
 	<div class="section">
 		<div class="box-container">
-				<ui-carousel slides="slides" slides-to-show="1"
-				 slides-to-scroll="1" initial-slide="0">
-					<carousel-item>
-						<h2>{{ item.title }}</h2>
-						<img src="{{ item.image }}" alt="Image" />
-					</carousel-item>
+			<ui-carousel slides="slides" slides-to-show="1" slides-to-scroll="1" initial-slide="0">
+				<carousel-item>
+					<h2>{{ item.title }}</h2>
+					<img src="{{ item.image }}" alt="Image" />
+				</carousel-item>
 
-					<carousel-prev>
-						<button class="interactable toggle-left"></button>
-					</carousel-prev>
+				<carousel-prev>
+					<button class="interactable toggle-left"></button>
+				</carousel-prev>
 
-					<carousel-next>
-						<button class="interactable toggle-right"></button>
-					</carousel-next>
-				</ui-carousel>
-			</div>
+				<carousel-next>
+					<button class="interactable toggle-right"></button>
+				</carousel-next>
+			</ui-carousel>
+		</div>
 	</div>
-	<div class="section" style="height:25%;">
+	<div class="section" style="height:50%;transform:translateY(60%)">
+		<a href="https://docs.google.com/presentation/d/1syyUnwgVndThR_IZD1f6woEDKaufOq5Qce4Hq-1v8rw/edit?usp=sharing">
+			<img src="assets/images/google_slides.jpg">
+		</a>
 	</div>
 	<a href="https://github.com/Ultimates1/employee-management-system">
-		<div class="section" style="height:75%;">
+		<div class="section" style="height:50%;;transform:translateY(50%)">
 			<img src="assets/images/logo-github.png">
 			<div class="title">
 				Github
