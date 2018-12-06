@@ -13,38 +13,55 @@
 
 <div class="container">
   <div class="jumbotron">
-  	<h1> Player Connect</h1>
+    <div class="row">
+        <div class="col-md-2">
+            <img  class="img-responsive" src="./images/Logo.png" />
+        </div>
+        <div class="col-md-10 text-left">
+            <h1 class="project_title">Player-Connect</h1>
+        </div>
+    </div>
   </div>
   <div class="row text-center">
-  	<div class="col-sm-4">
+  	<div class="col-sm-2">
 		<p class= "well">
 			<a href="http://playerconnect.net/dashboard"> Demo </a>
 		</p>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-2">
 		<p class= "well">
 			<a href="https://github.com/Just-Web/Player-Connect-App"> Github </a>
 		</p>
 	</div>
-  	<div class="col-sm-4">
+  	<div class="col-sm-2">
   		<p class ="well">
   			<a href="https://docs.google.com/presentation/d/1EYqd9PzXnLrwNwsv87yaNs7bR8R7QL5303t2bNalxQE/edit">
   			Presentation </a>
   		</p>
-  	</div>
+      </div>
+    <div class="col-sm-3">
+		<p class= "well">
+			<a href="#screenshotsbox" data-toggle="modal"> Project Screenshots </a>
+		</p>
+    </div>
+    <div class="col-sm-2">
+		<p class= "well">
+			<a href="https://youtu.be/eLcfGopOiww"> Project Demo </a>
+		</p>
+	</div>
   </div>
-  <h2>Team Members </h2>
+  <h2>Just-Web : Team Members </h2>
   <div class="row">
     <div class="col-sm-3 col-md-3">
         <a href="https://www.linkedin.com/in/phuoc-ngo-162663139/">
-        	<img src="images/Phuoc.jpg" class="img-thumbnail img-rounded img-responsive"></a>
+        	<img src="images/Phuoc.jpg" class="img-thumbnail img-rounded img-responsive team-member-images"></a>
         <p class="text-member-name">
                 <a href="https://www.linkedin.com/in/phuoc-ngo-162663139/"> Phuoc Ngo </a>
         </p>
     </div>
     <div class="col-sm-3 col-md-3">
         <a href="https://www.linkedin.com/in/sonam-nahar-27333423/">
-            <img src="images/sonam.png"  class="img-thumbnail img-rounded img-responsive">
+            <img src="images/sonam.png"  class="img-thumbnail img-rounded img-responsive team-member-images">
         </a>
         <p class="text-member-name">
             <a href="https://www.linkedin.com/in/sonam-nahar-27333423/"> Sonam Nahar </a>
@@ -52,19 +69,71 @@
     </div>
     <div class="col-sm-3 col-md-3">
         <a href="https://www.linkedin.com/in/ryan-omidi-248ba6170/">
-            <img src="images/Ryan.jpg" class="img-thumbnail img-rounded img-responsive">
+            <img src="images/Ryan.jpg" class="img-thumbnail img-rounded img-responsive team-member-images">
         </a>
         <p class="text-member-name">
             <a href="https://www.linkedin.com/in/ryan-omidi-248ba6170/"> Ryan Omidi  </a>
         </p>
     </div>
     <div class="col-sm-3 col-md-3">
-        <a href="https://www.linkedin.com/in/hungthanhlay"><img src="images/Hung.png" class="img-thumbnail img-rounded img-responsive"></a>
+        <a href="https://www.linkedin.com/in/hungthanhlay"><img src="images/Hung.png" class="img-thumbnail img-rounded img-responsive team-member-images"></a>
         <p class="text-member-name">
             <a href="https://www.linkedin.com/in/hungthanhlay"> Hung Lay </a>
         </p>
     </div>
-</div>
+  </div>
+  <div class="modal and carousel slide" id="screenshotsbox">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshotsbox" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshotsbox" data-slide-to="1"></li>
+            <li data-target="#screenshotsbox" data-slide-to="2"></li>
+            <li data-target="#screenshotsbox" data-slide-to="3"></li>
+            <li data-target="#screenshotsbox" data-slide-to="4"></li>
+            <li data-target="#screenshotsbox" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./images/screenshots/dashboard.png"  alt="Dashboard">
+              <div class="carousel-caption"><p>Dashboard</p></div>
+            </div>
+            <div class="item">
+              <img src="./images/screenshots/registration.png" alt="Registration">
+              <div class="carousel-caption"><p>Registration</p></div>
+            </div>
+            <div class="item">
+              <img src="./images/screenshots/login.png" alt="Login">
+              <div class="carousel-caption"><p>Login</p></div>
+            </div>
+            <div class="item">
+                <img src="./images/screenshots/aboutus.png" alt="about_us">
+                <div class="carousel-caption"><p>About Us</p></div>
+            </div>
+            <div class="item">
+                <img src="./images/screenshots/profile.png" alt="Profile">
+                <div class="carousel-caption"><p>Profile</p></div>
+            </div>
+            <div class="item">
+                <img src="./images/screenshots/search.png" alt="Search">
+                <div class="carousel-caption"><p>Search</p></div>
+            </div>
+            <div class="item">
+                <img src="./images/screenshots/Chat.png" alt="Chat">
+                <div class="carousel-caption"><p>Chat</p></div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#screenshotsbox" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#screenshotsbox" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>

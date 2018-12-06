@@ -6,8 +6,26 @@
 .text-center{
     text-align: center;
 }
-.img-responsive {
+.team-member-images {
     display: block;
     width: 100%;
     height: 250px;
+}
+.modal.and.carousel {
+    position: fixed; 
+  }
+  .modal-dialog {
+      width: 80% !important;
+  }
+.carousel-caption
+{
+    top: 0;
+    bottom: auto;
+    font-weight: bold;
+    color:#008245;
+    font-size: 16px;
+}
+.project_title{
+    color: #02406a !important;
+    margin-top:0px !important;
 }
