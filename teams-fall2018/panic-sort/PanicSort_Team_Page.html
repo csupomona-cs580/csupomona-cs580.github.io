@@ -1,0 +1,139 @@
+<!-- this was taken from W3 schools - https://www.w3schools.com/w3css/w3css_templates.asp -->
+<!DOCTYPE html>
+<html>
+<title>Panic Sort</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+#<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+#<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/coffeehouse.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+
+#logo{
+	display: block;
+	margin-left: 40%;
+	margin-right: 50%;
+	margin-top: 10%;
+	width: 40%;
+	height: 100px;	
+}
+
+#title {
+	display: block;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+#team {
+	display: block;
+	margin-top: 6%;
+	margin-left: 2%;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#project" class="w3-button w3-block w3-black">PROJECT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#tutorial" class="w3-button w3-block w3-black">INSTRUCTIONS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#team" class="w3-button w3-block w3-black">TEAM</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+	<div id = "logo">
+		<img src="regBus_Updated.jpg">
+	</div>
+  <div id = "title" class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">Sillibus</span>
+  </div>
+  <div id= "team" class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:45px"><br><br>created by Panic Sort</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black">Cal Poly Pomona</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Project Container -->
+<div class="w3-container" id="project">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE PROJECT</span></h5>
+
+				 
+        <p><a href="http://www.sillibus.xyz" target="_blank" class="w3-hover-text-green"><h4>Sillibus Complete Page</h4></a></p>
+
+				
+				<p><a href="https://github.com/CS5800/Panic_Sort_Project/tree/master/teams-fall2018/panic-sort" target="_blank" class = "w3-hover-text-green"><h4>Github Repo</h4></a></p>
+				
+				
+				<p><a href="https://docs.google.com/presentation/d/157xFoQ5aSDgnAJr-jz3xGPzXU_tavzcM4gMGRdv8pk0/edit?usp=sharing" target="_blank" class = "w3-hover-text-green"><h4>Google Demo Slides</h4></a></p>
+  </div>
+</div>
+
+
+<!-- About Container -->
+<div class="w3-container" id="tutorial">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">INSTRUCTIONS</span></h5>
+    <p>This web application scans a syllabus given by the user and extracts important dates for exams, quizzes, homework, etc and will either sync it with their
+		google calendar or output a calendar file which can be imported into another calendar application. </p>
+	<p>To use this web app, the user must choose which type of output they want, "Sync with Google" or "Get Offline Calendar".
+		After, the user needs to upload their syllabus file and choose a scanning method. "Searchable PDF"
+		is a normal searching method and "Scanned PDF" uses Google OCR to scan the file for important information. After you submit, the important dates from
+		the syllabus should be added to you Google Calendar if you signed in. If you choose the offline option, the calendar file should be downloaded automatically.</p>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container" id="team" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE TEAM</span></h5>
+	<p>Panic Sort is team of masters students putting together a web service for students that have trouble staying on top of due dates listed in a syllabus.</p>
+	<p>The group is named after a hilariously bad and scary algorithm that attempts to perform a quick sort on a group of data within a set amount of moves.</p>
+	<p>If the algorithm fails to finish sorting within x moves, it will begin deleting your hard drive out of shame.</p>
+	<p>Panic Sort consists of the following members.</p>
+    <p>-Ethan Averbukh</p>
+	<p>-Ethan Smith</p>
+	<p>-Hunter Gaukel</p>
+	<p>-Kevin Liu</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+
+
+
+</body>
+</html>
