@@ -29,3 +29,9 @@
     color: #02406a !important;
     margin-top:0px !important;
 }
+.carousel-indicators
+{
+    margin-left: 0px !important; 
+    width: 10% !important;
+    background-color: #87CEFA;
+}
