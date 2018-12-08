@@ -36,6 +36,17 @@
 	z-index: -10;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .company-heading h1 {
 	margin-bottom: 40px;
 	line-height: 80px;
